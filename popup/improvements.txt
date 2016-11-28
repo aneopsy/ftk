@@ -1,0 +1,10 @@
+List of improvements to be made in future
+
+Leave all facebook groups completed message is blank
+1. Hide type status feature for Facebook messages
+2. Improvements in friendlist, page list, group list tools
+3. Group transfer + make admin tool
+4. Add warning messages on harmful tools
+5. Provide online documentation for various features.
+ID extractor doesn't work with profile URLs
+Fix claim as group admin

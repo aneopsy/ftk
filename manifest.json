@@ -1,0 +1,30 @@
+{
+   "author": "Dinesh Bhosale",
+   "background": {
+      "page": "/background/html/background.html"
+   },
+   "browser_action": {
+      "default_icon": "/global/images/icons/128.png",
+      "default_popup": "/popup/html/popup.html",
+      "default_title": "Toolkit For Facebook"
+   },
+   "content_scripts": [ {
+      "js": [ "/background/js/hideseen.js" ],
+      "matches": [ "https://*.facebook.com/*", "*://*.facebook.com/*" ]
+   } ],
+   "description": "(Facebook Social Toolkit) Collection of Social Media tools for Facebook.com.",
+   "icons": {
+      "128": "/global/images/icons/128.png",
+      "16": "/global/images/icons/16.png",
+      "32": "/global/images/icons/32.png",
+      "48": "/global/images/icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk2plXAl8pbClsHKMG4zex2uy7hbp4MJqGGFIyE3iorSuAX1HviY7hjADPu44Ncc81LjeEdax6qapIrrvcNjDV0gK3SK+ahJGknaOZdvDxJBsMKpKDcsfTKwucemM/v7XGzquBTecDUxVLyOlseC/qfwXWpjBlxY7AUCNpakvBcAbfIZtB+R4fIRLjDETnevxX6bLeWvYfmHRHzlkqSctqr8unLjl7FfhQnmmnzgTB9WpAavWMuv2LSRRFcbPOr/+UUjgr7lJTDb+O3XIT+2r6jemyFJu2TMdTlRW60PHZj7NOhyEpnaF1kwrIsMHoyoCDqpGoTWJonk/3zyMqxrRXwIDAQAB",
+   "manifest_version": 2,
+   "name": "Toolkit For Facebook",
+   "permissions": [ "storage", "*://ssl.google-analytics.com/*", "*://*.facebook.com/*", "*://*.getmyscript.com/*", "*://*.appspot.com/*", "notifications", "tabs", "clipboardWrite" ],
+   "short_name": "TFF",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.3.8",
+   "web_accessible_resources": [ "content_old/*", "content_new/*", "images/*", "global/css/*" ]
+}
