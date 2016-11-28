@@ -7,7 +7,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Toolkit For Facebook</title>
+		<title>Facebook ToolKit</title>
 		<script type="text/javascript" src="/global/js/jquery.js"></script>
 		<script type="text/javascript" src="/global/js/bootstrap.js"></script>
 		<script type="text/javascript" src="/global/js/global_var.js"></script>
@@ -33,13 +33,14 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="http://fst.getmyscript.com" target="_blank">Toolkit For Facebook
+					<a class="navbar-brand" href="http://aneopsy.com" target="_blank">Facebook ToolKit
 						<span class="version" id="extensionVersion"></span>
 					</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
+                        <!--
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help<span class="caret"></span></a>
 							<ul class="dropdown-menu">
@@ -90,9 +91,9 @@
 								<li id="menu-item-1048" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1048"><a target="_blank" href="http://fst.getmyscript.com/facebook-group-member-tagger/">How To Tag Facebook Group Members</a></li>
 								<li id="menu-item-1031" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1031"><a target="_blank" href="http://fst.getmyscript.com/claim-as-group-admin-tool/">How To Claim As Facebook Group Admin Tool</a></li>
 							</ul>
-						</li>
+						</li>-->
 						<li>
-							<a href="http://fst.getmyscript.com/contact-us/" target="_blank">Contact</a>
+							<a href="http://aneopsy.com/" target="_blank">Paul THEIS (AneoPsy)</a>
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
@@ -117,9 +118,10 @@
 					<li class="active"><a href="#Home" data-toggle="tab"><span class="glyphicon glyphicon-th-large"></span> Account Tools</a></li>
 					<li><a href="#ext" data-toggle="tab"><span class="glyphicon glyphicon-floppy-save"></span> Extraction Tools</a></li>
 					<li><a href="#rm" data-toggle="tab"><span class="glyphicon glyphicon-erase"></span> Removal Tools</a></li>
+                    <li><a href="#page" data-toggle="tab"><span class="glyphicon glyphicon-floppy-save"></span> Page Tools</a></li>
 					<li><a href="#Emoji" data-toggle="tab"><span class="glyphicon glyphicon-heart"></span> Emoji</a></li>
 					<li><a href="#background" data-toggle="tab"><span class="glyphicon glyphicon-th-list"></span> Background</a></li>
-					<li><a href="#other" data-toggle="tab"><span class="glyphicon glyphicon-th-list"></span> Other</a></li>
+					<!-- <li><a href="#other" data-toggle="tab"><span class="glyphicon glyphicon-th-list"></span> Other</a></li> -->
 				</ul>
 				<!-- tab-content start -->
 				<div id="my-tab-content" class="tab-content">
@@ -141,13 +143,13 @@
 									<span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
 									Invite Friends To an Event
 								</button>
-								<button type="button" class="btn btn-default toolButtons" id="aafrao">
+								<button type="button" class="btn btn-default toolButtons" id="aafrao" title="Accept / Reject All Friend Requests At Once">
 									<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-									Accept / Reject All Friend Requests At Once
+									Accept / Reject All Friend...
 								</button>
-								<button type="button" class="btn btn-default toolButtons" id="clickpoke">
+								<button type="button" class="btn btn-default toolButtons" id="clickpoke" title="Click All Poke + Poke Back buttons">
 									<span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
-									Click All Poke + Poke Back buttons
+									Click All Poke + Poke Back...
 								</button>
 								<button type="button" class="btn btn-default toolButtons" id="caafb">
 									<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
@@ -171,9 +173,9 @@
 									<span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>
 									Group Transfer Tool
 								</button>
-								<button type="button" class="btn btn-default toolButtons" id="gpt">
+								<button type="button" class="btn btn-default toolButtons" id="gpt" title="Group Posting Tool 1 (Graph API Explorer)">
 									<span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
-									Group Posting Tool 1 (Graph API Explorer)
+									Group Posting Tool 1...
 								</button>
 								<button type="button" class="btn btn-default toolButtons" id="gpt2">
 									<span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
@@ -191,29 +193,29 @@
 									<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
 									Message All Facebook Friends
 								</button>
-								<button type="button" class="btn btn-default toolButtons" id="sstaff">
+								<button type="button" class="btn btn-default toolButtons" id="sstaff" title="Send Stickers To All Facebook Friends">
 									<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
-									Send Stickers To All Facebook Friends
+									Send Stickers To All Facebook...
 								</button>
 								<button type="button" class="btn btn-default toolButtons" id="polp">
 									<span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
 									Post On Liked Pages
 								</button>
-								<button type="button" class="btn btn-default toolButtons" id="jmugids">
+								<button type="button" class="btn btn-default toolButtons" id="jmugids" title="Join Multiple Groups Using Group IDs">
 									<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-									Join Multiple Groups Using Group IDs
+									Join Multiple Groups Using...
 								</button>
 								<button type="button" class="btn btn-default toolButtons" id="sbwish">
 									<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
 									Send Birthday Wishes
 								</button>
-								<button type="button" class="btn btn-default toolButtons" id="syfaaf">
+								<button type="button" class="btn btn-default toolButtons" id="syfaaf" title="Suggest Your Friends To Add Another Friend">
 									<span class="glyphicon glyphicon-link" aria-hidden="true"></span>
-									Suggest Your Friends To Add Another Friend
+									Suggest Your Friends To Add...
 								</button>
-								<button type="button" class="btn btn-default toolButtons" id="iyftjyg">
+								<button type="button" class="btn btn-default toolButtons" id="iyftjyg" title="Add All Facebook Friends As Group Member">
 									<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-									Add All Facebook Friends As Group Member
+									Add All Facebook Friends As...
 								</button>
 							</div>
 						</div>
@@ -254,9 +256,9 @@
 									<span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
 									Extract User Likes
 								</button>
-								<button type="button" class="btn btn-default toolButtons" id="eppnoff">
+								<button type="button" class="btn btn-default toolButtons" id="eppnoff" title="Extract Public Phone Numbers Of Friends">
 									<span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
-									Extract Public Phone Numbers Of Friends
+									Extract Public Phone Numbers...
 								</button>
 								<button type="button" class="btn btn-default toolButtons" id="epeoff">
 									<span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
@@ -302,9 +304,9 @@
 									<span class="glyphicon glyphicon-scissors" aria-hidden="true"></span>
 									Leave All Facebook Groups
 								</button>
-								<button type="button" class="btn btn-default toolButtons" id="capfr">
+								<button type="button" class="btn btn-default toolButtons" id="capfr" title="Cancel All Pending Friend Requests">
 									<span class="glyphicon glyphicon-erase" aria-hidden="true"></span>
-									Cancel All Pending Friend Requests
+									Cancel All Pending Friend...
 								</button>
 								<button type="button" class="btn btn-default toolButtons" id="iafsao">
 									<span class="glyphicon glyphicon-erase" aria-hidden="true"></span>
@@ -314,6 +316,30 @@
 						</div>
 					</div>
 					<!-- removal tools end -->
+                    <!-- extraction starts-->
+					<div class="tab-pane" id="page">
+						<!--free extraction tools-->
+						<div class="panel panel-default">
+							<div class="panel-heading">Free Extraction Tools</div>
+							<div class="buttonContainer">
+								<button type="button" class="btn btn-default toolButtons" id="efpfids">
+									<span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+									Extract Facebook Page Fan IDs
+								</button>
+							</div>
+						</div>
+						<!-- premium extraction tools-->
+						<div class="panel panel-default">
+							<div class="panel-heading">Premium Extraction Tools</div>
+							<div class="buttonContainer">
+								<button type="button" class="btn btn-default toolButtons" id="egemail" title="Send Message To All Liker Of Page">
+									<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+									Send Message To All Liker Of...
+								</button>
+							</div>
+						</div>
+					</div>
+					<!-- extraction tool ends-->
 					<!-- Background tools start -->
 					<div class="tab-pane" id="background">
 						<br>
@@ -328,7 +354,7 @@
 						<iframe class="popupFrame" src="/popup/html/emoji.html" frameborder="0"></iframe>
 					</div>
 					<!-- emoticons end -->
-					<!-- Other tools tab start-->
+					<!-- Other tools tab start
 					<div class="tab-pane" id="other">
 						<button type="button" class="btn btn-default toolButtons crx" data-href="https://chrome.google.com/webstore/detail/account-manager/cahmhpmgmcgbhafeickhklifhoonfala">
 							<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
@@ -338,7 +364,7 @@
 							<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
 							Toolkit For Twitter
 						</button>
-					</div>
+					</div>-->
 					<!-- background tools end -->
 				</div>
 				<!-- tab-content end -->

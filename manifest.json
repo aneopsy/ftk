@@ -1,18 +1,18 @@
 {
-   "author": "Dinesh Bhosale",
+   "author": "Paul THEIS",
    "background": {
       "page": "/background/html/background.html"
    },
    "browser_action": {
       "default_icon": "/global/images/icons/128.png",
       "default_popup": "/popup/html/popup.html",
-      "default_title": "Toolkit For Facebook"
+      "default_title": "Facebook Toolkit"
    },
    "content_scripts": [ {
       "js": [ "/background/js/hideseen.js" ],
       "matches": [ "https://*.facebook.com/*", "*://*.facebook.com/*" ]
    } ],
-   "description": "(Facebook Social Toolkit) Collection of Social Media tools for Facebook.com.",
+   "description": "(Facebook Toolkit) Collection of tools for Facebook.com.",
    "icons": {
       "128": "/global/images/icons/128.png",
       "16": "/global/images/icons/16.png",
@@ -23,8 +23,8 @@
    "manifest_version": 2,
    "name": "Toolkit For Facebook",
    "permissions": [ "storage", "*://ssl.google-analytics.com/*", "*://*.facebook.com/*", "*://*.getmyscript.com/*", "*://*.appspot.com/*", "notifications", "tabs", "clipboardWrite" ],
-   "short_name": "TFF",
+   "short_name": "FTK",
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "2.3.8",
+   "version": "1.0.1b",
    "web_accessible_resources": [ "content_old/*", "content_new/*", "images/*", "global/css/*" ]
 }

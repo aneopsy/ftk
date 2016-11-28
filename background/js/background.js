@@ -1,7 +1,6 @@
 /*
 //
-//  Created by Dinesh Bhosale on 10/7/15.
-//  Copyright (c) 2015 Dinesh Bhosale of getmyscript.com All rights reserved.
+//  Created by Paul THEIS.
 //
 */
 //for performing a task after installation
@@ -9,7 +8,6 @@ chrome.runtime.onInstalled.addListener(function(object) {
 	chrome.storage.local.get('installed', function(a) {
 		if (!a.installed) {
 			// after installing open main web site
-			//chrome.tabs.create({url: "http://fst.getmyscript.com/"}, function (tab){});
 			chrome.storage.local.set({
 				'installed': true
 			}, function() {});
@@ -29,14 +27,14 @@ chrome.runtime.onInstalled.addListener(function(object) {
 /*
 for updating member info in background
 */
-function set_update_member(e,cname,req_url){
-	if(e.email&&e.key){
-		var email=e.email;
-		var key=e.key;
+function set_update_member(e, cname, req_url){
+	if(e.email && e.key){
+		var email = e.email;
+		var key = e.key;
 		var xhr = new XMLHttpRequest();
 		if(cname){
 			var callback_func_name=cname;
-		}else{
+		} else {
 			var callback_func_name='';
 		}
 		xhr.open("POST",req_url,true);
@@ -45,10 +43,10 @@ function set_update_member(e,cname,req_url){
 			if (xhr.readyState == 4){
 				if(xhr.responseText=="ok"){
 					var member=true;
-				}else{
+				} else {
 					var member=false;
 				}
-				information={email:email,key:key,member:member};
+				information = {email: email, key: key, member: member};
 				chrome.storage.local.set({'information': information}, function() {
 					//console.log("member info is updated");
 				});

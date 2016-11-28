@@ -35,7 +35,7 @@ var pr=["gtt",
 	"capfr",
 	"iafsao" ];
 // for checking is cname is part of tools
-// that are currently in 
+// that are currently in
 function isprt(cname){
 	var ret=false;
 	for(var counter=0;counter<pr.length;counter++){
@@ -191,7 +191,7 @@ function setOneTimeEventListeners() {
 	document.getElementById("gpt").addEventListener("click", function(e) {
 		testTabUrl(gpt);
 	});
-	// for group posting tool 2 
+	// for group posting tool 2
 	document.getElementById("gpt2").addEventListener("click", function(e) {
 		testTabUrl(gpt2);
 	});
@@ -231,6 +231,10 @@ function setOneTimeEventListeners() {
 	document.getElementById("efids").addEventListener("click", function(e) {
 		testTabUrl(efids);
 	});
+    // extrat page fan ids
+    document.getElementById("efpfids").addEventListener("click", function(e) {
+        testTabUrl(efpfids);
+    });
 	//extract group ids
 	document.getElementById("egids").addEventListener("click", function(e) {
 		testTabUrl(egids);
