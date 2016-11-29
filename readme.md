@@ -26,6 +26,7 @@ Chrome plugin with some tools for Facebook.
 - Send Birthday Wishes
 - Suggest Your Friends To Add Another Friend
 - Add All Facebook Friends As Group Member
+
 ### Extraction Tools
 - ID Extractor
 - Extract Friend IDs
@@ -34,6 +35,7 @@ Chrome plugin with some tools for Facebook.
 - Extract User Likes
 - Extract Public Phone Numbers Of Friends
 - Extract Emails Of Friends
+
 ### Remove Tools
 - Unlike All Facebook Pages
 - Unfriend All Facebook Friends
@@ -43,7 +45,9 @@ Chrome plugin with some tools for Facebook.
 - Leave All Facebook Groups
 - Cancel All Pending Friend Requests
 - Ignore All Friend Suggestions
+
 ### Emoji
+
 ### Background
 
 ## Autor
