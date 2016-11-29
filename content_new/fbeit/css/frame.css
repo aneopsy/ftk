@@ -1,11 +1,6 @@
 /*
- * Copyright(c) 2016-2017 Paul THEIS 
- * 
- * 
- */
-/*
  *
- * Css of inner frame content 
+ * Css of inner frame content
  */
 .bottom_nav{
 	display: inline-block;
@@ -20,13 +15,23 @@
 .fullWidth{
 	width: 100%;
 }
-.navbar{
-	margin-bottom: 0px;
+.brand-logo{
+    font-size: 1.5rem !important;
 }
-.navbar-brand{
-	width:100%;
-	text-align:center;
+.btn {
+    background-color: #282C34;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
-.navbar-header{
-	width:100%;
+.btn:hover, .btn-large:hover {
+  background-color: #3C424E;
+}
+.bg-panel{
+    background-color: #21252B;
+}
+.bg-panel-heading{
+    background-color: #3C424E;
+}
+body {
+    background-color: #1B1D23;
 }
