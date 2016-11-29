@@ -1,8 +1,3 @@
-/*
-Copyright(c) 2014-2016 Dinesh Rajkumar Bhosale of getmyscript.com
-See license file for more information
-Contact developers at mr.dinesh.bhosale@gmail.com
-*/
 check();
 function start(){
 	buildToolbox();
@@ -146,7 +141,7 @@ function click_all_add_friend_buttons() {
 // 	for (counter = 0; document.getElementsByTagName("a")[counter]; counter++) {
 // 		if (document.getElementsByTagName("a")[counter].innerText == "Add Friend") {
 // 			validCounter.push(counter);
-// 		}	
+// 		}
 // 	}
 // 	function click_all_add_friend_buttons_final() {
 // 		var counter = 0;

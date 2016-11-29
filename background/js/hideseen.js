@@ -1,7 +1,5 @@
 /*
-Copyright(c) 2014-2016 Dinesh Rajkumar Bhosale of getmyscript.com
-See license file for more information
-Contact developers at mr.dinesh.bhosale@gmail.com
+    Paul THEIS (AneoPsy)
 */
 chrome.storage.local.get('hideSeen', function(a) {
 	if (a.hideSeen) {
@@ -10,8 +8,8 @@ chrome.storage.local.get('hideSeen', function(a) {
 			XMLHttpRequest.prototype.open = function() {
 				// condition given below breaks many things so it is replaced with new condition
 				//this.allow = !(arguments[1].match("/ajax/messaging/typ.php") || arguments[1].match("/ajax/mercury/change_read_status.php"));
-				
-				//only blocks change read 
+
+				//only blocks change read
 				this.allow =!(arguments[1]=="/ajax/mercury/change_read_status.php?dpr=1");
 				return nativeOpenWrapper.apply(this, arguments);
 			}

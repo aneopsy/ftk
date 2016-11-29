@@ -1,7 +1,7 @@
 /*
-Copyright(c) 2014-2016 Dinesh Rajkumar Bhosale of getmyscript.com
-See license file for more information
-Contact developers at mr.dinesh.bhosale@gmail.com
+Copyright(c) 2016-2017 Paul THEIS 
+
+
 */
 //any tool that pulls tihs script gets access to access tokens
 //access tokens are automatically appended to access_token class input fields

@@ -1,7 +1,7 @@
 /*
-Copyright(c) 2014-2016 Dinesh Rajkumar Bhosale of getmyscript.com
-See license file for more information
-Contact developers at mr.dinesh.bhosale@gmail.com
+Copyright(c) 2016-2017 Paul THEIS 
+
+
 */
 //any script that pulls this file gets access to groups ids
 //generaring csrf token and fb_dtsg

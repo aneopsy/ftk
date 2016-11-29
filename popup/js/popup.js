@@ -1,7 +1,7 @@
 /*
- * Copyright(c) 2015-2016 Dinesh Rajkumar Bhosale of getmyscript.com
- * See license file for more information
- * Contact developers at mr.dinesh.bhosale@gmail.com
+ * Copyright(c) 2015-2016 Paul THEIS 
+ * 
+ * 
  * */
 // remove all local storage data for a chrome extension , requires storage permission
 function clearStorage(){
@@ -105,13 +105,13 @@ function hiseSeenHandler() {
 // for setting one time event listeners
 function setOneTimeEventListeners() {
 	// event listener for search button
-	document.getElementById("mainSearch").addEventListener("submit", function(e) {
+	/*document.getElementById("mainSearch").addEventListener("submit", function(e) {
 		e.preventDefault();
 		var searchStirng = document.getElementById("searchText").value;
 		searchStirng = encodeURIComponent(searchStirng);
 		var windowToOpen = links.cse + searchStirng;
 		window.open(windowToOpen);
-	});
+	});*/
 	document.getElementById("fbvid").addEventListener("click", function(e) {
 		testTabUrl(fbvid);
 	});
@@ -318,7 +318,7 @@ function loaded() {
 	addElements();
 	osScroll();
 	// initiate tabs
-	$('#tabs').tab();
+	//$('#tabs').tab();
 	// set event listeners
 	setOneTimeEventListeners();
 	updateChecked();
