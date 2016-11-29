@@ -1,7 +1,7 @@
 /*
- * Copyright(c) 2015-2016 Paul THEIS 
- * 
- * 
+ * Copyright(c) 2015-2016 Paul THEIS
+ *
+ *
  * */
 // remove all local storage data for a chrome extension , requires storage permission
 function clearStorage(){
@@ -14,7 +14,8 @@ function clearStorage(){
 	}
 }
 // callback for checking if current tool is premium tool or not
-var pr=["gtt",
+var pr=[
+    "gtt",
 	"gpt",
 	"gpt2",
 	"poofp",
@@ -33,21 +34,21 @@ var pr=["gtt",
 	"epeoff",
 	"rafgao",
 	"capfr",
-	"iafsao" ];
+	"iafsao"];
 // for checking is cname is part of tools
 // that are currently in
 function isprt(cname){
-	var ret=false;
-	for(var counter=0;counter<pr.length;counter++){
-		if(cname==pr[counter]){
-			ret=true;
+	var ret = false;
+	for(var counter = 0; counter<pr.length; counter++) {
+		if(cname == pr[counter]) {
+			ret = true;
 			break;
 		}
 	}
 	return ret;
 }
-function startTool(callback){
-	var cname=callback.name;
+function startTool(callback) {
+	var cname = callback.name;
 	var query = {
 		active: true,
 		currentWindow: true
@@ -59,9 +60,9 @@ function startTool(callback){
 		hr.href = tabUrl;
 		hname = hr.host;
 		var newTab=true;
-		if(hname.match(hname_regex)){
+		if(hname.match(hname_regex)) {
 			callback();
-		}else{
+		} else {
 			backStart(cname,newTab);
 		}
 		//start(cname,newTab);
@@ -70,7 +71,7 @@ function startTool(callback){
 	chrome.tabs.query(query, callbackOne);
 }
 // function for sending message to background.js for creating a new tab
-function backStart(cname){
+function backStart(cname) {
 	var sendProp={};
 	sendProp.action="startTool";
 	sendProp.cname=cname;
@@ -317,9 +318,6 @@ function osScroll(){
 function loaded() {
 	addElements();
 	osScroll();
-	// initiate tabs
-	//$('#tabs').tab();
-	// set event listeners
 	setOneTimeEventListeners();
 	updateChecked();
 }

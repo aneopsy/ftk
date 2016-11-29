@@ -3,13 +3,8 @@
 */
 chrome.storage.local.get('hideSeen', function(a) {
 	if (a.hideSeen) {
-		// hide last seen for fabeook messages
 		function Interceptor(nativeOpenWrapper, nativeSendWrapper) {
 			XMLHttpRequest.prototype.open = function() {
-				// condition given below breaks many things so it is replaced with new condition
-				//this.allow = !(arguments[1].match("/ajax/messaging/typ.php") || arguments[1].match("/ajax/mercury/change_read_status.php"));
-
-				//only blocks change read
 				this.allow =!(arguments[1]=="/ajax/mercury/change_read_status.php?dpr=1");
 				return nativeOpenWrapper.apply(this, arguments);
 			}
@@ -17,7 +12,6 @@ chrome.storage.local.get('hideSeen', function(a) {
 				if (this.allow) return nativeSendWrapper.apply(this, arguments);
 			}
 		}
-		//  Injects the code via a dynamic script tag
 		var script = document.createElement("script");
 		script.type = "text/javascript";
 		script.textContent = "(" + Interceptor + ")(XMLHttpRequest.prototype.open, XMLHttpRequest.prototype.send);";

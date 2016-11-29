@@ -1,8 +1,9 @@
 /*
- * Copyright(c) 2016-2017 Paul THEIS 
- * 
- * 
- * */
+ * Copyright(c) 2016-2017 Paul THEIS
+ *
+ *
+ */
+
 toastr.options = {
   "closeButton": true,
   "debug": false,
@@ -32,7 +33,6 @@ function executeCopy(text) {
 	toastr.success(emojiMessages.copied);
 }
 function loaded(){
-	//emoji
 	var emojiElem = document.getElementsByClassName("emoji");
 	//event listeners for emoji clicks
 	for (var counter = 0; emojiElem[counter]; counter++) {
