@@ -1,7 +1,7 @@
 /*
- * Copyright(c) 2016-2017 Paul THEIS 
- * 
- * 
+ * Copyright(c) 2016-2017 Paul THEIS
+ *
+ *
  */
 /*
  * image picker
@@ -22,29 +22,29 @@ ul.thumbnails.image_picker_selector ul {
 	list-style-position: outside;
 	list-style-type: none;
 	padding: 0px;
-	margin: 0px; 
+	margin: 0px;
 }
 
 ul.thumbnails.image_picker_selector li.group_title {
-	float: none; 
+	float: none;
 }
 
 ul.thumbnails.image_picker_selector li {
 	margin: 0px 5px 0px 0px;
-	float: left; 
+	float: left;
 }
 ul.thumbnails.image_picker_selector li .thumbnail {
 	padding: 6px;
-	border: 1px solid #dddddd;
+/*	border: 1px solid #dddddd;*/
 	-webkit-user-select: none;
 	-moz-user-select: none;
-	-ms-user-select: none; 
+	-ms-user-select: none;
 }
 ul.thumbnails.image_picker_selector li .thumbnail img {
-	-webkit-user-drag: none; 
+	-webkit-user-drag: none;
 }
 ul.thumbnails.image_picker_selector li .thumbnail.selected {
-	background: #0088cc; 
+	background: #EE6E73;
 }
 img{
 	width:26px;

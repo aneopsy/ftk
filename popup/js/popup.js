@@ -36,7 +36,7 @@ var pr=[
 	"capfr",
 	"iafsao"];
 // for checking is cname is part of tools
-// that are currently in
+// that are currently
 function isprt(cname){
 	var ret = false;
 	for(var counter = 0; counter<pr.length; counter++) {

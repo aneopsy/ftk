@@ -1,7 +1,7 @@
 /*
- * Copyright(c) 2016-2017 Paul THEIS 
- * 
- * 
+ * Copyright(c) 2016-2017 Paul THEIS
+ *
+ *
  */
 /*
 total height 60px
@@ -21,6 +21,7 @@ total height 42px
 	padding-left: 5px;
 	padding-right: 5px;
 	height: 42px;
+    overflow: hidden;
 }
 /*
 total height 420px
@@ -31,9 +32,8 @@ total height 420px
 	padding-top: 5px;
 	padding-left: 5px;
 	padding-right: 5px;
-	height: 415px;
-	overflow-x: hidden;
-	overflow-y: scroll;
+	height: 465px;
+	overflow: hidden;
 }
 /*
 total height
@@ -43,7 +43,7 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 800px;
-	height:522px;
+	height:572px;
 	overflow: hidden;
 }
 #log_in_box_parent{

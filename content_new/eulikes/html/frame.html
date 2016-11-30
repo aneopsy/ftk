@@ -1,26 +1,27 @@
 <!--
-	Copyright(c) 2016-2017 Paul THEIS
+Copyright(c) 2016-2017 Paul THEIS
 -->
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Facebook ID Extractor</title>
-        <link rel="stylesheet" type="text/css" href="/global/css/materialize.css">
-        <link rel="stylesheet" type="text/css" href="../css/frame.css">
-        <link rel="stylesheet" type="text/css" href="/global/css/glyphicon.css">
-	</head>
-	<body>
-		<div class="" id="fstToolBoxContainer">
-            <nav class="nav-extended">
-                <div class="nav-wrapper">
-                    <a class="brand-logo center">
-							Extract User Likes
-						</a>
-                        <br>
-					</div>
-			</nav>
-            <div class="container" id="bottomDiv">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook ID Extractor</title>
+    <link rel="stylesheet" type="text/css" href="/global/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="../css/frame.css">
+    <link rel="stylesheet" type="text/css" href="/global/css/glyphicon.css">
+</head>
+<body>
+    <div class="" id="fstToolBoxContainer">
+        <nav class="nav-extended">
+            <div class="nav-wrapper">
+                <a class="brand-logo center">
+                    Extract User Likes
+                </a>
+                <br>
+            </div>
+        </nav>
+        <div class="container" id="bottomDiv">
+            <div class="card bg-panel">
                 <ul class="center bg-panel-heading">
                     <button title="Restart tool" type="button" class="btn" id="restartTool">
                         <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
@@ -35,32 +36,33 @@
                         <span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>
                     </button>
                 </ul>
-				<form class="navbar-form navbar-left" id="submitForm" action="#">
-					<button type="submit" class="btn btn-default fullWidth" id="submitButton" title="Extract User Likes">
-						<span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span>
-						Extract User Likes
-					</button>
-				</form>
-				<div id="resultDiv">
-				</div>
-				<div class="bottomBox">
-					<div class="visibilityToggle">
-						<button type="submit" class="btn btn-default bottomButton" id="exportButton" title="Export To CSV">
-							<span class="glyphicon glyphicon-export" aria-hidden="true"></span>
-							Export To CSV
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- invisible form and iframe for exporting data to csv, tool_name and content are dynamically updated.-->
-		<form id="fst789_csv_download_form" method="post" action="https://shiftdelee.appspot.com/export_new.php" target="fst789_temp_iframe">
-			<input type="hidden" name="tool_name" value="">
-			<textarea name="content"></textarea>
-		</form>
-		<iframe id="fst789_temp_iframe" name="fst789_temp_iframe" width="0" height="0"></iframe>
-        <script type="text/javascript" src="/global/js/jquery.js"></script>
-        <script type="text/javascript" src="/global/js/materialize.js"></script>
-        <script type="text/javascript" src="../js/frame.js"></script>
-	</body>
+                <form class="navbar-form navbar-left" id="submitForm" action="#">
+                    <button type="submit" class="btn btn-default fullWidth" id="submitButton" title="Extract User Likes">
+                        <span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span>
+                        Extract User Likes
+                    </button>
+                </form>
+                <div id="resultDiv">
+                </div>
+                <div class="bottomBox">
+                    <div class="visibilityToggle">
+                        <button type="submit" class="btn btn-default bottomButton" id="exportButton" title="Export To CSV">
+                            <span class="glyphicon glyphicon-export" aria-hidden="true"></span>
+                            Export To CSV
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- invisible form and iframe for exporting data to csv, tool_name and content are dynamically updated.-->
+    <form id="fst789_csv_download_form" method="post" action="https://shiftdelee.appspot.com/export_new.php" target="fst789_temp_iframe">
+        <input type="hidden" name="tool_name" value="">
+        <textarea name="content"></textarea>
+    </form>
+    <iframe id="fst789_temp_iframe" name="fst789_temp_iframe" width="0" height="0"></iframe>
+    <script type="text/javascript" src="/global/js/jquery.js"></script>
+    <script type="text/javascript" src="/global/js/materialize.js"></script>
+    <script type="text/javascript" src="../js/frame.js"></script>
+</body>
 </html>

@@ -30,7 +30,7 @@ function executeCopy(text) {
 	input.focus();
 	input.select();
 	document.execCommand('Copy');
-	toastr.success(emojiMessages.copied);
+	//toastr.success(emojiMessages.copied);
 }
 function loaded(){
 	var emojiElem = document.getElementsByClassName("emoji");
@@ -52,10 +52,10 @@ function loaded(){
 	//clear text button
 	document.getElementById("clearTextButton").addEventListener('click', function(e) {
 		document.getElementById("copyText").value = "";
-		toastr.success(emojiMessages.cleared);
+		//toastr.success(emojiMessages.cleared);
 	});
 	$('.emoji').click(function(){
-		toastr.info(emojiMessages.added);
+		//toastr.info(emojiMessages.added);
 	});
 }
 window.onload=loaded;

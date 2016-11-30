@@ -22,34 +22,36 @@ Copyright(c) 2016-2017 Paul THEIS
             </div>
         </nav>
         <div class="container" id="bottomDiv">
-            <ul class="center bg-panel-heading">
-                <button title="Restart tool" type="button" class="btn" id="restartTool">
-                    <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
-                </button>
-                <button title="Close" type="button" class="btn" id="close-button">
-                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                </button>
-                <button title="Minimize" type="button" class="btn" id="resize-button">
-                    <span class="glyphicon glyphicon-resize-small" aria-hidden="true"></span>
-                </button>
-                <button title="Maximize" type="button" class="btn" id="maximize-button">
-                    <span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>
-                </button>
-            </ul>
-            <form class="navbar-form navbar-left" id="submitForm" action="#">
-                <button type="submit" class="btn btn-default fullWidth" id="submitButton" title="Extract Group Emails">
-                    <span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span>
-                    Extract Group Emails
-                </button>
-            </form>
-            <div id="resultDiv">
-            </div>
-            <div class="bottomBox">
-                <div class="visibilityToggle">
-                    <button type="submit" class="btn btn-default bottomButton" id="exportButton" title="Export To CSV">
-                        <span class="glyphicon glyphicon-export" aria-hidden="true"></span>
-                        Export To CSV
+            <div class="card bg-panel">
+                <ul class="center bg-panel-heading">
+                    <button title="Restart tool" type="button" class="btn" id="restartTool">
+                        <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
                     </button>
+                    <button title="Close" type="button" class="btn" id="close-button">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                    <button title="Minimize" type="button" class="btn" id="resize-button">
+                        <span class="glyphicon glyphicon-resize-small" aria-hidden="true"></span>
+                    </button>
+                    <button title="Maximize" type="button" class="btn" id="maximize-button">
+                        <span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>
+                    </button>
+                </ul>
+                <form class="navbar-form navbar-left" id="submitForm" action="#">
+                    <button type="submit" class="btn btn-default fullWidth" id="submitButton" title="Extract Group Emails">
+                        <span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span>
+                        Extract Group Emails
+                    </button>
+                </form>
+                <div id="resultDiv">
+                </div>
+                <div class="bottomBox">
+                    <div class="visibilityToggle">
+                        <button type="submit" class="btn btn-default bottomButton" id="exportButton" title="Export To CSV">
+                            <span class="glyphicon glyphicon-export" aria-hidden="true"></span>
+                            Export To CSV
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

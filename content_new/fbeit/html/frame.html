@@ -1,5 +1,5 @@
 <!--
-	Copyright(c) 2016-2017 Paul THEIS
+Copyright(c) 2016-2017 Paul THEIS
 
 
 -->
@@ -8,75 +8,77 @@ For inviting friends to event
 -->
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Invite Your Friends To Facebook Event</title>
-        <link rel="stylesheet" type="text/css" href="/global/css/materialize.css">
-        <link rel="stylesheet" type="text/css" href="../css/frame.css">
-        <link rel="stylesheet" type="text/css" href="/global/css/glyphicon.css">
-	</head>
-	<body>
-		<div class="" id="fstToolBoxContainer">
-			<nav class="navbar navbar-default">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<a class="navbar-brand">
-                            Invite your Friends to Event
-                        </a>
-                        <br>
-					</div>
-			</nav>
+<head>
+    <meta charset="UTF-8">
+    <title>Invite Your Friends To Facebook Event</title>
+    <link rel="stylesheet" type="text/css" href="/global/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="../css/frame.css">
+    <link rel="stylesheet" type="text/css" href="/global/css/glyphicon.css">
+</head>
+<body>
+    <div class="" id="fstToolBoxContainer">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand">
+                        Invite your Friends to Event
+                    </a>
+                    <br>
+                </div>
+            </nav>
             <div class="container" id="bottomDiv">
-                <ul class="center bg-panel-heading">
-                    <button title="Restart tool" type="button" class="btn" id="restartTool">
-                        <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
-                    </button>
-                    <button title="Close" type="button" class="btn" id="close-button">
-                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                    </button>
-                    <button title="Minimize" type="button" class="btn" id="resize-button">
-                        <span class="glyphicon glyphicon-resize-small" aria-hidden="true"></span>
-                    </button>
-                    <button title="Maximize" type="button" class="btn" id="maximize-button">
-                        <span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>
-                    </button>
-                </ul>
-				<form class="navbar-form navbar-left" id="submitForm" action="#">
-					<div class="form-group">
-						<label for="urlInput">Enter Event ID </label>
-						<input type="number" class="form-control" placeholder="##########" id="idInput"
-						autocomplete="on">
-					</div>
-					<div class="form-group">
-						<label for="delayTime">Enter delay time between invitation requests</label>
-						<input type="number" class="form-control" placeholder="60" id="delayTime" min="0" max="999"
-						value="60"
-						>
-					</div>
-					<div class="form-group">
-						<label for="delayTime">Enter Starting Friend Number</label>
-						<input type="number" class="form-control" placeholder="1" id="startingFriendNumber" min="1" max="5000"
-						value="1"
-						>
-					</div>
-					<div class="form-group">
-						<label for="delayTime">Enter Ending Friend Number</label>
-						<input type="number" class="form-control" placeholder="100" id="endingFriendNumber" min="1" max="5000"
-						autocomplete="on"
-						value="100"
-						>
-					</div>
-					<button type="submit" class="btn btn-default fullWidth" id="submitButton" title="Invite Friends">
-					<span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
-					Invite Friends
-					</button>
-				</form>
-			</div>
-			<div class="container" id="resultDiv">
-			</div>
-		</div>
+                <div class="card bg-panel">
+                    <ul class="center bg-panel-heading">
+                        <button title="Restart tool" type="button" class="btn" id="restartTool">
+                            <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+                        </button>
+                        <button title="Close" type="button" class="btn" id="close-button">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        </button>
+                        <button title="Minimize" type="button" class="btn" id="resize-button">
+                            <span class="glyphicon glyphicon-resize-small" aria-hidden="true"></span>
+                        </button>
+                        <button title="Maximize" type="button" class="btn" id="maximize-button">
+                            <span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>
+                        </button>
+                    </ul>
+                    <form class="navbar-form navbar-left" id="submitForm" action="#">
+                        <div class="form-group">
+                            <label for="urlInput">Enter Event ID </label>
+                            <input type="number" class="form-control" placeholder="##########" id="idInput"
+                            autocomplete="on">
+                        </div>
+                        <div class="form-group">
+                            <label for="delayTime">Enter delay time between invitation requests</label>
+                            <input type="number" class="form-control" placeholder="60" id="delayTime" min="0" max="999"
+                            value="60"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="delayTime">Enter Starting Friend Number</label>
+                            <input type="number" class="form-control" placeholder="1" id="startingFriendNumber" min="1" max="5000"
+                            value="1"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="delayTime">Enter Ending Friend Number</label>
+                            <input type="number" class="form-control" placeholder="100" id="endingFriendNumber" min="1" max="5000"
+                            autocomplete="on"
+                            value="100"
+                            >
+                        </div>
+                        <button type="submit" class="btn btn-default fullWidth" id="submitButton" title="Invite Friends">
+                            <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
+                            Invite Friends
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="container" id="resultDiv">
+            </div>
+        </div>
         <script type="text/javascript" src="/global/js/jquery.js"></script>
         <script type="text/javascript" src="/global/js/materialize.js"></script>
         <script type="text/javascript" src="../js/frame.js"></script>
-	</body>
-</html>
+    </body>
+    </html>

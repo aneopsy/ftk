@@ -1,7 +1,7 @@
 /*
- * Copyright(c) 2016-2017 Paul THEIS 
- * 
- * 
+ * Copyright(c) 2016-2017 Paul THEIS
+ *
+ *
  * */
 function toggleResizeButtons() {
 	var Resize = document.getElementById("resize-button");
@@ -130,10 +130,10 @@ function copy(){
 //function for appending data on frame
 function appendData(title,result){
 	var appendCode='';
-	appendCode+='<div class="panel panel-default">';
-	appendCode+='<div class="panel-heading">'+title+'</div>';
+	appendCode+='<div class="card-panel bg-panel">';
+	appendCode+='<div class="bg-panel-heading">'+title;
+    appendCode+='<button type="button" data-id="'+result+'" class="btn-floating"style="float: right;"><span class="glyphicon glyphicon-copy"></span></button>'+'</div>';
 	appendCode+='<div class="panel-body">';
-	appendCode+='<button type="button" data-id="'+result+'" class="btn btn-default copy">Copy</button>';
 	appendCode+='<a target="_blank" href="https://fb.com/'+result+'">';
 	appendCode+=result;
 	appendCode+='</a>';

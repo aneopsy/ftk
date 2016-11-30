@@ -1,12 +1,15 @@
 /*
- * Copyright(c) 2016-2017 Paul THEIS 
- * 
- * 
+ * Copyright(c) 2016-2017 Paul THEIS
+ *
+ *
  */
 h2 {
 	font-size: 24.5px
 }
-
+h4 {
+	font-size: 16px;
+    color: #FFF;
+}
 h1 {
 	font-size: inherit;
 	line-height: inherit;
@@ -22,9 +25,8 @@ h1 {
 .list {
 	line-height: 16px;
 	padding: 5px;
-	height: 400px;
+	height: 240px;
 	overflow-y: scroll;
-	background: #E6E6E6;
 }
 
 .list span {
@@ -1964,6 +1966,10 @@ h1 {
 
 .emoji:active {
 	opacity: 0.8;
+}
+
+textarea {
+    color: #FFF;
 }
 
 #hiddenTextArea {
