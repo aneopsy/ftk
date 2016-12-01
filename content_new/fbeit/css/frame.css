@@ -1,19 +1,19 @@
 /*
- *
- * Css of inner frame content
- */
+*
+* Css of inner frame content
+*/
 .bottom_nav{
-	display: inline-block;
-	padding-bottom: 10px;
+    display: inline-block;
+    padding-bottom: 10px;
 }
 .bottom_nav>button{
-	margin-left: 5px;
+    margin-left: 5px;
 }
 .navbar-header{
-	display: inline-block;
+    display: inline-block;
 }
 .fullWidth{
-	width: 100%;
+    width: 100%;
 }
 .brand-logo{
     font-size: 1.5rem !important;
@@ -24,7 +24,7 @@
     margin-bottom: 5px;
 }
 .btn:hover, .btn-large:hover {
-  background-color: #3C424E;
+    background-color: #3C424E;
 }
 .bg-panel{
     background-color: #21252B;
@@ -34,4 +34,10 @@
 }
 body {
     background-color: #1B1D23;
+}
+#submitForm{
+    margin: 10px;
+}
+input {
+    color: #FFF;
 }

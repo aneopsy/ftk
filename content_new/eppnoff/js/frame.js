@@ -1,7 +1,5 @@
 /*
- * Copyright(c) 2016-2017 Paul THEIS 
- * 
- * 
+ * Copyright(c) 2016-2017 Paul THEIS
  * */
 var resultTbody='resultTbody';
 var resultDiv="resultDiv";
@@ -9,13 +7,15 @@ var invisibleComma='<div class="fst789_invisibleComma">,</div>';
 function toggleResizeButtons() {
 	var Resize = document.getElementById("resize-button");
 	var Maximize = document.getElementById("maximize-button");
-	if (Resize.style["display"] == "block") {
-		Resize.style["display"] = "none";
-		Maximize.style["display"] = "block";
-	} else {
-		Resize.style["display"] = "block";
-		Maximize.style["display"] = "none";
-	}
+    /*
+    if (Resize.style["display"] == "block") {
+        Resize.style["display"] = "none";
+        Maximize.style["display"] = "block";
+    } else {
+        Resize.style["display"] = "block";
+        Maximize.style["display"] = "none";
+    }
+    */
 }
 //function to export data to csv
 function export_to_csv(data_holder) {
@@ -99,7 +99,7 @@ function setEventListener(){
 	}
 	window.addEventListener('message', handleSizingResponse, false);
 }
-//append to tbody 
+//append to tbody
 function appendToTbody(html){
 	$("#"+resultTbody).append(html);
 	visibilityToggle();

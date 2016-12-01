@@ -1,18 +1,18 @@
 /*
 Copyright(c) 2016-2017 Paul THEIS 
-
-
 */
 function toggleResizeButtons() {
 	var Resize = document.getElementById("resize-button");
 	var Maximize = document.getElementById("maximize-button");
-	if (Resize.style["display"] == "block") {
-		Resize.style["display"] = "none";
-		Maximize.style["display"] = "block";
-	} else {
-		Resize.style["display"] = "block";
-		Maximize.style["display"] = "none";
-	}
+    /*
+    if (Resize.style["display"] == "block") {
+        Resize.style["display"] = "none";
+        Maximize.style["display"] = "block";
+    } else {
+        Resize.style["display"] = "block";
+        Maximize.style["display"] = "none";
+    }
+    */
 }
 //setting event listeners on current frame
 function setEventListener(){

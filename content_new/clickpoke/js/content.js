@@ -1,11 +1,13 @@
 /*
-Copyright(c) 2016-2017 Paul THEIS 
-
-
+Copyright(c) 2016-2017 Paul THEIS
 */
 check();
 function start(){
-	buildToolbox();
+	if(!document.location.pathname.match("\/pokes")){
+		restartTool();
+	}else{
+		buildToolbox();
+	}
 }
 function resizeFrame() {
 	var newClassName = document.getElementById(targetDivId).getAttribute("class");
