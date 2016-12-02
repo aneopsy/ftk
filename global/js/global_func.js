@@ -1,7 +1,7 @@
 /*
- * Copyright(c) 2016-2017 Paul THEIS 
- * 
- * 
+ * Copyright(c) 2016-2017 Paul THEIS
+ *
+ *
  * */
 // for showing notifications
 function show(msg, url) {
@@ -151,6 +151,9 @@ function start(toolName){
 	}else if(toolName=="egids"){
 		// extract group ids
 		tabRun(egids);
+    }else if(toolName=="esconv"){
+        // extract senders of conv
+        tabRun(esconv);
 	}else if(toolName=="eulikes"){
 		// extract user likes
 		tabRun(eulikes);
@@ -1179,6 +1182,37 @@ function egids(){
 	//start group id genrator script
 	chrome.tabs.executeScript(null, {
 		file: "/content_new/content/js/user_group_id.js"
+	});
+	//start content script
+	chrome.tabs.executeScript(null, {
+		file: "/content_new/"+dirName+"/js/content.js"
+	});
+	//starting language check
+	chrome.tabs.executeScript(null, {
+		file: "/content_new/content/js/lang.js"
+	});
+}
+// extract group ids
+function esconv(){
+	var dirName='esconv';
+	chrome.tabs.executeScript(null, {
+		file: "/global/js/jquery.js"
+	});
+	//start toastr script
+	chrome.tabs.executeScript(null, {
+		file: "/global/js/toastr.js"
+	});
+	//generating user id and fb_dtsg
+	chrome.tabs.executeScript(null, {
+		file: "/content_new/content/js/fbdtsg.js"
+	});
+	//for loading variables
+	chrome.tabs.executeScript(null, {
+		file: "/content_new/"+dirName+"/js/var.js"
+	});
+	//executing general functions
+	chrome.tabs.executeScript(null, {
+		file: "/content_new/content/js/general.js"
 	});
 	//start content script
 	chrome.tabs.executeScript(null, {

@@ -1,7 +1,5 @@
 /*
-Copyright(c) 2016-2017 Paul THEIS 
-
-
+Copyright(c) 2016-2017 Paul THEIS
 */
 //generating user_id and csrf token
 var fb_dtsg='';

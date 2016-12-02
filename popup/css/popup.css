@@ -45,6 +45,7 @@ body {
 	width: 800px;
 	height:572px;
 	overflow: hidden;
+    color:#FFF;
 }
 #log_in_box_parent{
 	width: 800px;
@@ -147,7 +148,7 @@ body {
     background-color: #1B1D23;
 }
 .bg-panel{
-    background-color: #21252B;
+    background-color: rgba(33, 37, 43, 0.8);
 }
 .bg-panel-heading{
     background-color: #3C424E;

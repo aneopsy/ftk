@@ -29,6 +29,7 @@ var pr=[
 	"iyftjyg",
 	"egemail",
 	"egids",
+    "esconv",
 	"eulikes",
 	"eppnoff",
 	"epeoff",
@@ -240,6 +241,10 @@ function setOneTimeEventListeners() {
 	document.getElementById("egids").addEventListener("click", function(e) {
 		testTabUrl(egids);
 	});
+    //extract senders of conv
+    document.getElementById("esconv").addEventListener("click", function(e) {
+        testTabUrl(esconv);
+    });
 	//extract user likes
 	document.getElementById("eulikes").addEventListener("click", function(e) {
 		testTabUrl(eulikes);
